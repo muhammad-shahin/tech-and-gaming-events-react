@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "service_name": "Tech Conferences and Expos",
+    "event_details": "Tech Conferences and Expos are the epicenter of innovation and knowledge sharing in the tech industry. These events bring together leading experts, thought leaders, and tech enthusiasts from around the world. Attendees can immerse themselves in the latest trends, cutting-edge technologies, and groundbreaking ideas. Whether you're interested in artificial intelligence, blockchain, or cybersecurity, these conferences cover it all. Join us for a transformative experience that will expand your horizons and connect you with the brightest minds in tech.",
+    "event_description": "Explore the Future of Tech",
+    "event_cover_image": "https://i.ibb.co/VYZc3pb/tech-conf-expo.jpg",
+    "booking_price": "$299"
+  },
+  {
+    "id": 2,
+    "service_name": "Gaming Conventions",
+    "event_details": "Gaming Conventions are a paradise for gamers of all kinds. From video games to tabletop games, these events offer an immersive gaming experience like no other. Dive into the world of gaming with hands-on demos, exciting tournaments, cosplay competitions, and exclusive game previews. Meet fellow gamers, developers, and industry insiders while exploring the latest gaming innovations. Get ready for an unforgettable journey into the realms of virtual adventures and epic battles.",
+    "event_description": "Level Up Your Gaming",
+    "event_cover_image": "https://i.ibb.co/9wY1hMn/gaming-conventions.webp",
+    "booking_price": "$249"
+  },
+  {
+    "id": 3,
+    "service_name": "Coding Challenges",
+    "event_details": "Coding Challenges are the ultimate test of your programming skills and problem-solving abilities. Whether you're a seasoned coder or just starting your coding journey, these challenges offer a platform to challenge yourself, learn, and compete. Solve real-world coding problems, showcase your creativity, and win exciting prizes. Join the coding community and embrace the thrill of solving puzzles, optimizing algorithms, and writing elegant code.",
+    "event_description": "Crack the Code",
+    "event_cover_image": "https://i.ibb.co/NxqRpgF/Coding-Challenges.jpg",
+    "booking_price": "$49"
+  },
+  {
+    "id": 4,
+    "service_name": "VR Experiences",
+    "event_details": "VR Experiences take you on a journey beyond reality. Immerse yourself in virtual worlds and explore breathtaking landscapes, futuristic cities, and fantastical realms. Whether you're into gaming, education, or entertainment, VR offers an unparalleled level of immersion. Dive with sharks, travel through time, or create your virtual masterpiece. Step into the future with VR Experiences and redefine your reality.",
+    "event_description": "Escape Reality with VR",
+    "event_cover_image": "https://i.ibb.co/gFCsybb/VR-Experiences.jpg",
+    "booking_price": "$79"
+  },
+  {
+    "id": 5,
+    "service_name": "New Product Launch",
+    "event_details": "New Product Launch events are where innovation meets anticipation. Be among the first to witness groundbreaking products and technologies as they are unveiled to the world. From the latest smartphones to cutting-edge gadgets, these events showcase the future of consumer tech. Join us for an exclusive look at what's next in the world of innovation and be part of the tech revolution.",
+    "event_description": "Witness Innovation Unveiled",
+    "event_cover_image": "https://i.ibb.co/T20CbD5/product-launch-event.jpg",
+    "booking_price": "Free Admission"
+  },
+  {
+    "id": 6,
+    "service_name": "Tech Startup Pitch Competitions",
+    "event_details": "Tech Startup Pitch Competitions are where aspiring entrepreneurs present their groundbreaking ideas to a panel of seasoned investors and industry experts. These events are a platform for startups to gain exposure, secure funding, and turn their dreams into reality. Join us to witness the birth of the next big thing in tech and be part of the entrepreneurial journey.",
+    "event_description": "Startup Innovation in Action",
+    "event_cover_image": "https://i.ibb.co/HT9hD6t/Tech-Startup-Pitch-Competitions.jpg",
+    "booking_price": "$99"
+  },
+  {
+    "id": 7,
+    "service_name": "Game Development Workshops",
+    "event_details": "Game Development Workshops are your gateway to the world of game creation. Learn the art and science of game design, programming, and storytelling from industry veterans. Whether you're a beginner or an experienced developer, these workshops provide hands-on training and insights into the game development process. Turn your passion for gaming into a skillset and bring your game ideas to life.",
+    "event_description": "Create Your Gaming Masterpiece",
+    "event_cover_image": "https://i.ibb.co/hVFS04b/Game-Development-Workshops.jpg",
+    "booking_price": "$149"
+  },
+  {
+    "id": 8,
+    "service_name": "eSports Tournaments",
+    "event_details": "eSports Tournaments are the battlegrounds of the digital era. Compete against top gamers from around the world in thrilling esports competitions. Whether you're into MOBAs, FPS, or sports simulations, these tournaments offer a chance to showcase your skills and win glory. Join the esports community, prove your mettle, and experience the adrenaline rush of competitive gaming.",
+    "event_description": "Rise as an eSports Champion",
+    "event_cover_image": "https://i.ibb.co/8X6YNpb/e-Sports-tournaments.jpg",
+    "booking_price": "$69"
+  },
+  {
+    "id": 9,
+    "service_name": "Hackathons",
+    "event_details": "Hackathons are the breeding grounds of innovation. Gather with like-minded individuals to solve real-world problems using technology. From software development to hardware hacking, these events challenge your creativity and technical skills. Collaborate with a team, build prototypes, and present your solutions to a panel of judges. Join the hackathon community and be part of the tech revolution.",
+    "event_description": "Innovate through Hackathons",
+    "event_cover_image": "https://i.ibb.co/gMg609Q/hackathons.webp",
+    "booking_price": "$59"
+  }
+]
