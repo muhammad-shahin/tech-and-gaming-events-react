@@ -11,6 +11,9 @@ const Button = ({ text, logo }) => {
   );
 };
 
-Button.propTypes = {};
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  logo: PropTypes.node,
+};
 
 export default Button;
