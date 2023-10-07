@@ -12,6 +12,7 @@ import {
 } from 'react-icons/si';
 import Service from '../Components/Service';
 import { useLoaderData } from 'react-router-dom';
+import RecentEvents from '../Components/RecentEvents';
 const Home = () => {
   const servicesData = useLoaderData();
   console.log(servicesData);
@@ -26,9 +27,9 @@ const Home = () => {
   return (
     <section>
       <Slider />
-      <div className=' py-12'>
+      <div className=' my-12'>
         <div>
-          <h2 className='font-roboto text-center text-[22px] md:text-[32px] font-semibold uppercase mb-4'>
+          <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
             Companies We Worked With
           </h2>
         </div>
@@ -43,8 +44,8 @@ const Home = () => {
         </div>
       </div>
       {/* services section */}
-      <div className='container mx-auto px-[5%] py-12'>
-        <h2 className='font-roboto text-center text-[22px] md:text-[32px] font-semibold uppercase mb-4'>
+      <div className='container mx-auto px-[5%] my-12'>
+        <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
           Our Services
         </h2>
         <div className='flex justify-center items-center flex-wrap gap-6'>
@@ -54,6 +55,16 @@ const Home = () => {
               service={service}
             />
           ))}
+        </div>
+      </div>
+
+      {/* recent events */}
+      <div className='my-12 container mx-auto px-[5%]'>
+        <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
+          Recent Events
+        </h2>
+        <div>
+          <RecentEvents />
         </div>
       </div>
     </section>
