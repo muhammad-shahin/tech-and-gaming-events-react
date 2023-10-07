@@ -9,3 +9,7 @@ body {
   color: white;
   font-family: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 0; /* Set width to 0 */
+}

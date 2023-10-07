@@ -36,7 +36,7 @@ const Slider = () => {
         modules={[Pagination, Navigation, Mousewheel, Autoplay]}
       >
         <SwiperSlide>
-          <div className='lg:h-[70vh] h-[60vh] relative'>
+          <div className='md:h-[70vh] h-[60vh] relative'>
             <img
               className='object-center object-cover h-full w-full'
               src={
@@ -47,7 +47,7 @@ const Slider = () => {
             <div className='overlay absolute top-0 left-0 w-full h-full p-10'></div>
             {/* content */}
             <div className='absolute top-0 left-0 font-squadaOne flex flex-col justify-center items-center w-full h-full text-center gap-4'>
-              <h1 className='text-white lg:text-5xl text-lg'>
+              <h1 className='text-white md:text-5xl text-lg'>
                 Welcome to
                 <span className='text-primaryColor font-bold'>
                   {' '}
@@ -56,7 +56,7 @@ const Slider = () => {
                 <br />
                 Your Gateway to Exceptional Event Management!
               </h1>
-              <p className='max-w-2xl lg:px-0 px-[5%] font-roboto text-[12px]'>
+              <p className='max-w-2xl md:px-0 px-[5%] font-roboto text-[12px]'>
                 Are you ready to take your tech and gaming gatherings to the
                 next level? Look no further. At
                 <span className='text-primaryColor font-bold'>
@@ -77,7 +77,7 @@ const Slider = () => {
 
         {sliderContent.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className='lg:h-[70vh] h-[60vh] relative'>
+            <div className='md:h-[70vh] h-[60vh] relative'>
               <img
                 className='object-top object-cover h-full w-full'
                 src={slide.event_image}
@@ -88,11 +88,11 @@ const Slider = () => {
               <div className='absolute font-squadaOne w-full h-full bottom-0 right-0 flex items-end p-10'>
                 <div className='w-[100vw] flex lg:flex-row flex-col lg:gap-0 gap-5 justify-center items-center lg:justify-between'>
                   <div>
-                    <p className='max-w-2xl font-roboto lg:text-[18px] text-[14px] font-bold leading-none text-primaryColor flex  justify-center items-center gap-2'>
+                    <p className='max-w-2xl font-roboto md:text-[18px] text-[14px] font-bold leading-none text-primaryColor flex  justify-center items-center gap-2'>
                       {slide.event_status} Events
                       <AiOutlineArrowDown className='animateArrow' />
                     </p>
-                    <h1 className='text-white text-xl lg:text-3xl leading-none '>
+                    <h1 className='text-white text-xl md:text-3xl leading-none '>
                       {slide.event_title}
                     </h1>
                   </div>
@@ -109,11 +109,11 @@ const Slider = () => {
                   )}
 
                   <div>
-                    <p className='max-w-2xl font-roboto lg:text-[18px] text-[14px] font-bold leading-none text-primaryColor flex  justify-center items-center gap-2'>
+                    <p className='max-w-2xl font-roboto md:text-[18px] text-[14px] font-bold leading-none text-primaryColor flex  justify-center items-center gap-2'>
                       {slide.event_date}
                       <AiOutlineArrowDown className='animateArrow' />
                     </p>
-                    <h1 className='text-white text-xl lg:text-3xl leading-none flex gap-2 '>
+                    <h1 className='text-white text-xl md:text-3xl leading-none flex gap-2 '>
                       <MdLocationOn className='text-primaryColor' />
                       {slide.event_location}
                     </h1>
