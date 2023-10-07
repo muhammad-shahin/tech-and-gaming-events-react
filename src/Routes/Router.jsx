@@ -10,7 +10,7 @@ const routes = [
     children: [
       {
         path: '/',
-        loader: () => fetch('/destinations.json'),
+        loader: () => fetch('/services.json'),
         element: <Home />,
       },
       {

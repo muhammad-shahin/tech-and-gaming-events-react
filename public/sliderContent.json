@@ -3,96 +3,96 @@
     "id": 1,
     "event_title": "South Asia Gaming Extravaganza",
     "event_location": "Bangkok's Grand Arena",
-    "event_date": "2023-11-15",
-    "event_status": "Upcoming Spectacle",
+    "event_date": "15 Aug, 2023",
+    "event_status": "Upcoming",
     "event_image": "https://i.ibb.co/1dxHPhr/south-asia-gaming-competition.jpg"
   },
   {
     "id": 2,
     "event_title": "Coding Challenge: Asia's Code Crusade",
     "event_location": "Tokyo's Tech Hub",
-    "event_date": "2023-10-25",
-    "event_status": "Recent Tech Triumph",
+    "event_date": "25 Oct, 2023",
+    "event_status": "Recent",
     "event_image": "https://i.ibb.co/MDppYKC/programming-competition-asia.jpg"
   },
   {
     "id": 3,
     "event_title": "EuroCode: The Ultimate Coding Showdown",
     "event_location": "London's Innovation Palace",
-    "event_date": "2024-02-08",
-    "event_status": "Upcoming Code Clash",
+    "event_date": "08 Feb, 2024",
+    "event_status": "Upcoming",
     "event_image": "https://i.ibb.co/gRhj0nf/programming-competition-europe.jpg"
   },
   {
     "id": 4,
     "event_title": "FutureTech Odyssey: Asia's Tech Marvels",
     "event_location": "Singapore's Futuristic Hub",
-    "event_date": "2023-12-10",
-    "event_status": "Eagerly Anticipated",
+    "event_date": "10 Dec, 2023",
+    "event_status": "Recent",
     "event_image": "https://i.ibb.co/QQDT3WP/asia-tech-events-on-future-technology.jpg"
   },
   {
     "id": 5,
     "event_title": "Game On: Book Your Gaming Adventure",
     "event_location": "New York City's Gaming Paradise",
-    "event_date": "2023-11-05",
-    "event_status": "Recently Concluded",
+    "event_date": "05 Nov, 2023",
+    "event_status": "Upcoming",
     "event_image": "https://i.ibb.co/BNb7Xpg/book-us-for-your-gaming-events.jpg"
   },
   {
     "id": 6,
     "event_title": "The Grand Championship Showdown",
     "event_location": "Los Angeles' Gaming Arena",
-    "event_date": "2024-01-20",
-    "event_status": "Next Gaming Spectacle",
+    "event_date": "20 Jan, 2024",
+    "event_status": "Recent",
     "event_image": "https://i.ibb.co/JnqwbzQ/competetive-gaming.jpg"
   },
   {
     "id": 7,
     "event_title": "India's Mega Gaming Extravaganza",
     "event_location": "Mumbai's Gaming Haven",
-    "event_date": "2023-12-02",
-    "event_status": "Awaited Gaming Frenzy",
+    "event_date": "02 Dec, 2023",
+    "event_status": "Upcoming",
     "event_image": "https://i.ibb.co/wWgBwb8/inidan-biggest-gaming-event.jpg"
   },
   {
     "id": 8,
     "event_title": "Game On: Book Your Gaming Adventure",
     "event_location": "San Francisco's Gaming Oasis",
-    "event_date": "2023-11-10",
-    "event_status": "Recently Booked",
+    "event_date": "10 Nov, 2023",
+    "event_status": "Recent",
     "event_image": "https://i.ibb.co/qCCt6TT/book-us-for-gaming-events.jpg"
   },
   {
     "id": 9,
     "event_title": "Immersive VR Tech Showcase",
     "event_location": "Seoul's Virtual Reality Arena",
-    "event_date": "2024-02-18",
-    "event_status": "Upcoming VR Wonderland",
+    "event_date": "18 Feb, 2024",
+    "event_status": "Upcoming",
     "event_image": "https://i.ibb.co/L1mDp2B/events-on-vr-upcoming.jpg"
   },
   {
     "id": 10,
     "event_title": "Tech Gala: Book Your Tech Odyssey",
     "event_location": "Nairobi's Tech Marvel Arena",
-    "event_date": "2023-11-30",
-    "event_status": "Recently Explored",
+    "event_date": "30 Nov, 2023",
+    "event_status": "Recent",
     "event_image": "https://i.ibb.co/5LDb8LD/book-us-for-tech-events.jpg"
   },
   {
     "id": 11,
     "event_title": "Africa's Mega Tech Confluence",
     "event_location": "Cape Town's Tech Nexus",
-    "event_date": "2024-03-05",
-    "event_status": "Anticipated Tech Extravaganza",
+    "event_date": "05 Mar, 2024",
+    "event_status": "Upcoming",
     "event_image": "https://i.ibb.co/d4gsn2J/africas-biggest-tech-conference.jpg"
   },
   {
     "id": 12,
     "event_title": "China Gaming Showdown",
     "event_location": "Shanghai's Gaming Arena",
-    "event_date": "2023-11-18",
-    "event_status": "Upcoming Gaming Battle",
+    "event_date": "18 Nov, 2023",
+    "event_status": "Recent",
     "event_image": "https://i.ibb.co/BtSKTzQ/china-gaming-competition.jpg"
   }
 ]
