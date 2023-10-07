@@ -8,7 +8,7 @@ const Service = ({ service }) => {
     <div className='bg-primaryColor rounded-lg w-[90%] md:w-[300px] lg:w-[350px] md:h-[600px] text-center text-bgColor shadow-white shadow-md grid grid-rows-[1fr,auto]'>
       <div>
         <img
-          className='w-fit rounded-t-lg'
+          className='w-fit h-[250px] object-cover rounded-t-lg'
           src={event_cover_image}
           alt=''
         />

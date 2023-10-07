@@ -13,9 +13,9 @@ import {
 import Service from '../Components/Service';
 import { useLoaderData } from 'react-router-dom';
 import RecentEvents from '../Components/RecentEvents';
+import Testimonial from '../Components/Testimonial';
 const Home = () => {
   const servicesData = useLoaderData();
-  console.log(servicesData);
   const companiesWeWorkedWith = [
     { text: 'Nintendo', logo: <SiNintendogamecube /> },
     { text: 'Epic Games', logo: <SiEpicgames /> },
@@ -65,6 +65,16 @@ const Home = () => {
         </h2>
         <div>
           <RecentEvents />
+        </div>
+      </div>
+
+      {/* what client say about us  */}
+      <div className='container mx-auto px-[5%] my-12'>
+        <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
+          What Client Say About Us
+        </h2>
+        <div>
+          <Testimonial />
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Mousewheel, Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
@@ -63,9 +62,10 @@ const Slider = () => {
                   {' '}
                   HEXA EVENTS
                 </span>
-                , we&apos;re passionate about crafting unforgettable experiences that
-                bring your tech and gaming visions to life. From epic gaming
-                conventions to cutting-edge tech expos, we&apos;ve got you covered.
+                , we&apos;re passionate about crafting unforgettable experiences
+                that bring your tech and gaming visions to life. From epic
+                gaming conventions to cutting-edge tech expos, we&apos;ve got
+                you covered.
               </p>
               <Button
                 text={'Book Now'}
