@@ -1,24 +1,31 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useContext, useState } from 'react';
 import './Navbar.css';
 import { AuthContext } from '../../Services/AuthProvider/AuthProvider';
 import { TbDna } from 'react-icons/tb';
 import { BsArrowRightCircle } from 'react-icons/bs';
+import Button from '../../Components/Button';
 
 const Navbar = () => {
-  const editMe = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
   const [isOpen, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {};
 
   return (
     <header className=''>
       <nav className='pb-3 pt-6 container mx-auto flex justify-between items-center px-[5%] lg:w-auto relative'>
         {/* log */}
         <div>
-          <button className='text-bgColor font-roboto text-[22px] medium px-5 py-1 rounded-full bg-primaryColor flex justify-center items-center gap-2 border-2 border-transparent hover:bg-transparent hover:text-white hover:border-primaryColor duration-300'>
-            <TbDna className='text-[24px]' />
-            HEXA EVENTS
-          </button>
+          <Button
+            text='HEXA EVENTS'
+            handleOnClick={() => {
+              navigate('/');
+            }}
+            logo={<TbDna className='text-[24px]' />}
+          />
         </div>
         {/* nav items */}
         <ul
@@ -59,10 +66,21 @@ const Navbar = () => {
             <NavLink to='/testimonial'>Testimonial</NavLink>
           </li>
           <div>
-            <button className='font-roboto text-bgColor text-[22px] px-5 py-1 rounded-full bg-primaryColor flex justify-center items-center gap-2 border-2 border-transparent hover:bg-transparent hover:text-white hover:border-primaryColor duration-300'>
-              <BsArrowRightCircle className='text-[24px]' />
-              LOGIN
-            </button>
+            {user ? (
+              <Button
+                text='Logout'
+                logo={<BsArrowRightCircle className='md:text-[24px]' />}
+                handleOnClick={handleLogOut}
+              />
+            ) : (
+              <Button
+                text='LOGIN'
+                logo={<BsArrowRightCircle className='md:text-[24px]' />}
+                handleOnClick={() => {
+                  navigate('/login');
+                }}
+              />
+            )}
           </div>
         </ul>
         {/* login sign up buttons */}

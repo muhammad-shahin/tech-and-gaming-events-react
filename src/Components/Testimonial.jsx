@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { BsChatRightQuote } from 'react-icons/bs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Mousewheel, Autoplay } from 'swiper/modules';
@@ -23,16 +22,18 @@ const Testimonial = () => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
         mousewheel={true}
         autoplay={true}
         modules={[Pagination, Navigation, Mousewheel, Autoplay]}
       >
         <SwiperSlide>
-          <div>
+          <div className='py-6'>
             <img
               className='md:w-[150px] md:h-[150px] w-[100px] h-[100px] rounded-full object-cover mx-auto'
-              src='https://source.unsplash.com/random/?potrait,man/150x150{1}'
+              src='https://i.ibb.co/B3CGHfc/profile-picture-9.jpg'
             />
             <h5 className='text-[25px] md:text-[35px] font-bold font-squadaOne uppercase mt-4 mb-1'>
               Klevin Ditamon
@@ -43,7 +44,7 @@ const Testimonial = () => {
             <div className='px-10 py-4 bg-primaryColor rounded-lg w-fit mx-auto my-6'>
               <p className='text-[22px] max-w-lg text-bgColor font-roboto'>
                 <BsChatRightQuote className='relative text-[48px] mx-auto' />
-                I've covered their tech events on my blog, and they always
+                I&apos;ve covered their tech events on my blog, and they always
                 deliver high-quality content and engaging discussions.
               </p>
             </div>
@@ -79,7 +80,5 @@ const Testimonial = () => {
     </div>
   );
 };
-
-Testimonial.propTypes = {};
 
 export default Testimonial;

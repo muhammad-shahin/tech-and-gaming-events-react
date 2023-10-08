@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 const RecentEvents = () => {
   return (
     <div className='bg-secondaryColor rounded-lg md:w-[600px] mx-auto md:h-[350px] h-[250px] relative pl-12 pr-8 py-5 flex justify-between items-start'>
@@ -47,7 +45,5 @@ const RecentEvents = () => {
     </div>
   );
 };
-
-RecentEvents.propTypes = {};
 
 export default RecentEvents;

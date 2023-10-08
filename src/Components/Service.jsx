@@ -21,7 +21,7 @@ const Service = ({ service }) => {
           </p>
         </div>
       </div>
-      <div className='row-span-2 pb-4'>
+      <div className='row-span-2 pb-4 mx-auto'>
         <p className='font-medium font-squadaOne text-[28px] md:text-[36px] my-3'>
           {booking_price}
         </p>

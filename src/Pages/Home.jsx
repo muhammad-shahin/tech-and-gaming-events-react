@@ -14,6 +14,7 @@ import Service from '../Components/Service';
 import { useLoaderData } from 'react-router-dom';
 import RecentEvents from '../Components/RecentEvents';
 import Testimonial from '../Components/Testimonial';
+import Footer from '../Layouts/Footer';
 const Home = () => {
   const servicesData = useLoaderData();
   const companiesWeWorkedWith = [
@@ -27,7 +28,7 @@ const Home = () => {
   return (
     <section>
       <Slider />
-      <div className=' my-12'>
+      <div className=' my-20'>
         <div>
           <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
             Companies We Worked With
@@ -44,7 +45,7 @@ const Home = () => {
         </div>
       </div>
       {/* services section */}
-      <div className='container mx-auto px-[5%] my-12'>
+      <div className='container mx-auto px-[5%] my-20'>
         <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
           Our Services
         </h2>
@@ -59,7 +60,7 @@ const Home = () => {
       </div>
 
       {/* recent events */}
-      <div className='my-12 container mx-auto px-[5%]'>
+      <div className='my-20 container mx-auto px-[5%]'>
         <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
           Recent Events
         </h2>
@@ -69,7 +70,7 @@ const Home = () => {
       </div>
 
       {/* what client say about us  */}
-      <div className='container mx-auto px-[5%] my-12'>
+      <div className='container mx-auto px-[5%] my-20'>
         <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
           What Client Say About Us
         </h2>
@@ -77,6 +78,7 @@ const Home = () => {
           <Testimonial />
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
