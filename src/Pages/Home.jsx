@@ -45,7 +45,10 @@ const Home = () => {
         </div>
       </div>
       {/* services section */}
-      <div className='container mx-auto px-[5%] my-20'>
+      <div
+        id='services'
+        className='container mx-auto px-[5%] my-20'
+      >
         <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
           Our Services
         </h2>
@@ -70,7 +73,10 @@ const Home = () => {
       </div>
 
       {/* what client say about us  */}
-      <div className='container mx-auto px-[5%] my-20'>
+      <div
+        id='testimonials'
+        className='container mx-auto px-[5%] my-32'
+      >
         <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
           What Client Say About Us
         </h2>

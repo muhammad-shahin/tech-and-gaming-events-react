@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Input from '../Components/Input';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import GoogleSignIn from '../Components/GoogleSignIn';
@@ -17,7 +17,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   //   importing context
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, user } = useContext(AuthContext);
 
   // handlePasswordChange
   const handlePasswordChange = (e) => {
@@ -67,6 +67,15 @@ const Login = () => {
       setErrorMessage(passwordError);
     }
   };
+
+  // redirect user if user is logged in
+  useEffect(() => {
+    if (user) {
+      // If the user is logged in, navigate them to the home screen
+      navigate(location?.state ? location.state : '/');
+    }
+  }, [user, navigate, location]);
+
   return (
     <div className=' w-full h-[90vh] justify-center items-center flex font-roboto'>
       <div

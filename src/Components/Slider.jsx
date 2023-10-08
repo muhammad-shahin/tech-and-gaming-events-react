@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Mousewheel, Autoplay } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/mousewheel';
@@ -30,9 +30,8 @@ const Slider = () => {
           clickable: true,
         }}
         navigation={true}
-        mousewheel={true}
         autoplay={true}
-        modules={[Pagination, Navigation, Mousewheel, Autoplay]}
+        modules={[Pagination, Navigation, Autoplay]}
       >
         <SwiperSlide>
           <div className='md:h-[70vh] h-[60vh] relative'>

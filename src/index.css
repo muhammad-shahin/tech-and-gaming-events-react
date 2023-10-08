@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background-color: #010c2c;
   color: white;
   font-family: 'Poppins', sans-serif;
   line-height: normal;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
   width: 0; /* Set width to 0 */
 }
-

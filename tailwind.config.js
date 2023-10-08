@@ -3,9 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      bgColor: '#111111',
-      primaryColor: '#15E1F2',
-      secondaryColor: '#788DF3',
+      bgColor: '#010C2C',
+      primaryColor: '#7dd3fc',
+      secondaryColor: '#0284c7',
       transparent: 'transparent',
       white: '#FFFFFF',
     },

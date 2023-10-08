@@ -1,6 +1,7 @@
 import Root from '../Layouts/Root';
 import Home from '../Pages/Home';
 import Login from '../Pages/Login';
+import ServiceDetails from '../Pages/ServiceDetails';
 import SignUp from '../Pages/SignUp';
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
       {
         path: '/sign-up',
         element: <SignUp />,
+      },
+      {
+        path: '/service-details/:serviceId',
+        loader: () => fetch('/services.json'),
+        element: <ServiceDetails />,
       },
     ],
   },

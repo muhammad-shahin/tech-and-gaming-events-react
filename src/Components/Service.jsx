@@ -1,14 +1,27 @@
 import Button from './Button';
 import { SlCalender } from 'react-icons/sl';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 const Service = ({ service }) => {
-  const { service_name, event_description, event_cover_image, booking_price } =
-    service;
+  const {
+    id,
+    service_name,
+    event_description,
+    event_cover_image,
+    booking_price,
+  } = service;
+  const navigate = useNavigate();
+  const handleBookNowClick = () => {
+    navigate(`/service-details/${id}`);
+  };
   return (
-    <div className='bg-primaryColor rounded-lg w-[90%] md:w-[300px] lg:w-[350px] md:h-[600px] text-center text-bgColor shadow-white shadow-md grid grid-rows-[1fr,auto]'>
+    <div
+      style={{ boxShadow: '1px 1px 10px 1px #15E1F2' }}
+      className='bg-primaryColor rounded-lg w-[90%] md:w-[300px] lg:w-[350px] md:h-[600px] text-center text-bgColor grid grid-rows-[1fr,auto]'
+    >
       <div>
         <img
-          className='w-fit h-[250px] object-cover rounded-t-lg'
+          className='w-screen h-[250px] object-cover rounded-t-lg'
           src={event_cover_image}
           alt=''
         />
@@ -20,17 +33,19 @@ const Service = ({ service }) => {
             {event_description}
           </p>
         </div>
+        <div className='absolute bottom-0 left-0 bg-black bg-opacity-[0.6] w-full lg:h-[15%] h-[30%] rounded-b-lg flex justify-start items-center'></div>
       </div>
       <div className='row-span-2 pb-4 mx-auto'>
         <p className='font-medium font-squadaOne text-[28px] md:text-[36px] my-3'>
           {booking_price}
         </p>
-        <Button
-          text='Book Now'
-          bg='#000'
-          color='#15E1F2'
-          logo={<SlCalender />}
-        />
+        <button
+          className={`font-roboto text-white text-[18px] md:text-[22px] md:px-6 px-3 md:py-3 py-1 rounded-full bg-secondaryColor flex justify-center items-center gap-2 border-2 border-transparent hover:scale-[0.95] hover:text-white hover:border-primaryColor duration-500 custom`}
+          onClick={handleBookNowClick}
+        >
+          <SlCalender />
+          Book Now
+        </button>
       </div>
     </div>
   );

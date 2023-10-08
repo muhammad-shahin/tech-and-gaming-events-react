@@ -14,7 +14,7 @@ import Swal from 'sweetalert2';
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(null);
   const googleProvider = new GoogleAuthProvider();
 
   // email & password sign up
