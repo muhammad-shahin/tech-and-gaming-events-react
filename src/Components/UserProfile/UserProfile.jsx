@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types';
 import './UserProfile.css';
 import { AuthContext } from '../../Services/AuthProvider/AuthProvider';
 import { NavLink } from 'react-router-dom';
 import { RiDashboardFill } from 'react-icons/ri';
 import { FaRegNewspaper } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import profileIcon from '../../Assets/Icons/profileIcon.svg';
 import { useContext } from 'react';
 
-const UserProfile = ({ setVisible }) => {
+const UserProfile = () => {
   const { user, logoutUser } = useContext(AuthContext);
 
   const handleLogout = () => {
@@ -33,17 +33,11 @@ const UserProfile = ({ setVisible }) => {
 
   return (
     <div
-      className={`bg-[#010c2c] w-[300px] p-5 text-center appear-style relative z-50`}
-      onMouseEnter={() => {
-        setVisible(true);
-      }}
-      onMouseLeave={() => {
-        setVisible(false);
-      }}
+      className={`bg-[#010c2c] w-fit p-5 text-center appear-style relative z-50`}
     >
       <img
-        src={user?.photoURL}
-        className='rounded-full w-[64px] object-cover mx-auto'
+        src={user?.photoURL !== null ? user.photoURL : profileIcon}
+        className='rounded-full w-[64px] h-[64px] object-cover mx-auto'
         alt='Profile Photo'
       />
       <p className='font-medium text-[14px] mt-2'>Profile Status</p>
@@ -90,10 +84,6 @@ const UserProfile = ({ setVisible }) => {
       </button>
     </div>
   );
-};
-
-UserProfile.propTypes = {
-  setVisible: PropTypes.func.isRequired,
 };
 
 export default UserProfile;

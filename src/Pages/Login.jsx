@@ -119,7 +119,7 @@ const Login = () => {
             </Link>
           </p>
           {errorMessage && (
-            <p className='text-red-600 font-medium text-[18px] text-center mt-4'>
+            <p className='text-red-600 font-medium text-[18px] text-center mt-4 max-w-[350px]'>
               {errorMessage}
             </p>
           )}
@@ -128,7 +128,7 @@ const Login = () => {
         {/* horizontal row */}
         <div className='w-full flex justify-center items-center gap-3 my-4'>
           <hr className='w-full h-[2px] bg-gray-300' />
-          <span className='text-gray-600 font-medium'>Or</span>
+          <span className=' font-medium'>Or</span>
           <hr className='w-full h-[2px] bg-gray-300' />
         </div>
         {/* sign in with google section */}

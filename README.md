@@ -2,7 +2,7 @@
 
 Welcome to HEXA EVENTS, your one-stop solution for tech and gaming event management!
 
-🌐 [Visit HEXA EVENTS](https://techandgamingevents.web.app)
+🌐 [Visit HEXA EVENTS](https://tech-and-gaming-events.web.app/)
 
 ## Top 5 Features
 

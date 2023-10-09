@@ -32,7 +32,7 @@ const GoogleSignIn = () => {
   return (
     <div>
       <button
-        className='text-[20px] outline-none border-2 border-[#787676] px-5 py-2 rounded-full bg-white  text-bgColor flex justify-center items-center gap-3 w-full hover:scale-[0.95] duration-500'
+        className='text-[20px] outline-none border-2 border-[#787676] px-5 py-3 rounded-full bg-white  text-bgColor flex justify-center items-center gap-3 w-full hover:scale-[0.95] duration-500'
         onClick={handleGoogleSignIn}
       >
         <FcGoogle className='text-[26px]' />

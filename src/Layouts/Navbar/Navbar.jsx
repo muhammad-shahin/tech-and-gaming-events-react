@@ -7,7 +7,7 @@ import { TbDna } from 'react-icons/tb';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { IoExitOutline } from 'react-icons/io5';
 import Button from '../../Components/Button';
-import { BsPersonCircle } from 'react-icons/bs';
+import profileIcon from '../../Assets/Icons/profileIcon.svg';
 import UserProfile from '../../Components/UserProfile/UserProfile';
 
 const Navbar = () => {
@@ -21,12 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <header
-      id='top'
-      data-aos='zoom-in'
-      data-aos-easing='linear'
-      data-aos-duration='300'
-    >
+    <header id='top'>
       <nav className='pb-3 pt-6 container mx-auto flex justify-between items-center px-[5%] lg:w-auto relative'>
         {/* log */}
         <div>
@@ -99,21 +94,25 @@ const Navbar = () => {
         {/* Profile Icon */}
         <div
           id='profile-icon'
-          className='flex justify-center items-center gap-6 relative group'
+          className='flex justify-center items-center gap-6 group'
           onClick={() => {
             setShowProfile(!showProfile);
           }}
         >
-          {user ? (
+          {user && (
             <img
               src={user.photoURL}
-              className='w-[36px] object-cover rounded-full cursor-pointer'
+              className='w-[48px] h-[48px] object-cover rounded-full cursor-pointer'
             />
-          ) : (
-            <BsPersonCircle className='w-[32px] h-[32px] text-sky-600 cursor-pointer ' />
+          )}
+          {user?.photoURL === null && (
+            <img
+              className='text-secondaryColor cursor-pointer'
+              src={profileIcon}
+            />
           )}
           {user && showProfile ? (
-            <div className='absolute top-[62px] right-0'>
+            <div className='absolute top-[90px] right-0'>
               <UserProfile />
             </div>
           ) : (
@@ -121,13 +120,13 @@ const Navbar = () => {
           )}
 
           {/* hamburger menu */}
-          <div className='lg:hidden'>
-            <Hamburger
-              color='#0284C7'
-              toggled={isOpen}
-              toggle={setOpen}
-            />
-          </div>
+        </div>
+        <div className='lg:hidden'>
+          <Hamburger
+            color='#0284C7'
+            toggled={isOpen}
+            toggle={setOpen}
+          />
         </div>
       </nav>
       <hr className='text-primaryColor' />

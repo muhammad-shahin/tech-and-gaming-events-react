@@ -50,7 +50,7 @@ const Input = ({
           />
         ))}
       {passwordError && (
-        <p className='text-[#fff] text-[14px] text-center mt-1 font-medium'>
+        <p className='text-[#000000] text-[16px] text-center mt-1 '>
           {passwordError}
         </p>
       )}

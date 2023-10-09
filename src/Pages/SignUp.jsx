@@ -145,7 +145,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className=' w-full h-[90vh] justify-center items-center flex font-roboto'>
+    <div className=' w-full h-[90vh] md:h-[95vh] justify-center items-center flex font-roboto'>
       <div
         style={{ boxShadow: '5px 5px 15px 5px #15E1F2' }}
         className='bg-secondaryColor md:p-32 p-8 rounded-lg '
@@ -223,7 +223,7 @@ const SignUp = () => {
         {/* horizontal row */}
         <div className='w-full flex justify-center items-center gap-3 my-4'>
           <hr className='w-full h-[2px] bg-gray-300' />
-          <span className='text-gray-600 font-medium'>Or</span>
+          <span className=' font-medium'>Or</span>
           <hr className='w-full h-[2px] bg-gray-300' />
         </div>
         {/* sign in with google section */}
