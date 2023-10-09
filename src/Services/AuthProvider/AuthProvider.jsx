@@ -65,7 +65,7 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  // toggle profile on mouseover
+  // toggle profile on click
   const [showProfile, setShowProfile] = useState(false);
 
   const authInfo = {

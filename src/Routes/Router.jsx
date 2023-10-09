@@ -6,11 +6,13 @@ import PricingCard from '../Pages/Pricing';
 import ServiceDetails from '../Pages/ServiceDetails';
 import SignUp from '../Pages/SignUp';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Error from '../Pages/Error/Error';
 
 const routes = [
   {
     path: '/',
     element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',

@@ -7,9 +7,12 @@ import { TbDna } from 'react-icons/tb';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { IoExitOutline } from 'react-icons/io5';
 import Button from '../../Components/Button';
+import { BsPersonCircle } from 'react-icons/bs';
+import UserProfile from '../../Components/UserProfile/UserProfile';
 
 const Navbar = () => {
-  const { user, logoutUser } = useContext(AuthContext);
+  const { user, logoutUser, showProfile, setShowProfile } =
+    useContext(AuthContext);
   const [isOpen, setOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -88,13 +91,38 @@ const Navbar = () => {
         </ul>
         {/* login sign up buttons */}
 
-        {/* hamburger menu */}
-        <div className='lg:hidden'>
-          <Hamburger
-            color='#15E1F2'
-            toggled={isOpen}
-            toggle={setOpen}
-          />
+        {/* Profile Icon */}
+        <div
+          id='profile-icon'
+          className='flex justify-center items-center gap-6 relative group'
+          onClick={() => {
+            setShowProfile(!showProfile);
+          }}
+        >
+          {user ? (
+            <img
+              src={user.photoURL}
+              className='w-[36px] object-cover rounded-full cursor-pointer'
+            />
+          ) : (
+            <BsPersonCircle className='w-[32px] h-[32px] text-sky-600 cursor-pointer ' />
+          )}
+          {user && showProfile ? (
+            <div className='absolute top-[62px] right-0'>
+              <UserProfile />
+            </div>
+          ) : (
+            ''
+          )}
+
+          {/* hamburger menu */}
+          <div className='lg:hidden'>
+            <Hamburger
+              color='#0284C7'
+              toggled={isOpen}
+              toggle={setOpen}
+            />
+          </div>
         </div>
       </nav>
       <hr className='text-primaryColor' />

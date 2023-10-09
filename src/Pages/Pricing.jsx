@@ -27,12 +27,12 @@ export default function PricingCard() {
     <section className='flex flex-wrap justify-center items-center gap-6 my-12 px-[5%] lg:px-0'>
       <CustomPricingCard
         points={pricingType1Benefits}
-        title='Goof For Participant Under 1000'
+        title='Best For Events If Participant Under 1000'
         price={5000}
       />
       <CustomPricingCard
         points={pricingType2Benefits}
-        title='Goof For Participant Under 2500'
+        title='Best For Events If Participant Under 2500'
         price={'8000'}
       />
       <CustomPricingCard
