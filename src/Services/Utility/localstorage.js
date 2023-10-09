@@ -1,3 +1,5 @@
+import { tr } from 'date-fns/locale';
+
 // get stored booked events data from local storage
 const getStoredBookedEvents = () => {
   const getStored = localStorage.getItem('bookedEvents');
@@ -21,5 +23,16 @@ const saveBookedEvents = (bookedEvents) => {
   }
   return false;
 };
+// remove booked events from local storage
+const removeBookedEvents = (eventToRemove) => {
+  const storedEventsData = getStoredBookedEvents();
+  const updateBookingEvents = storedEventsData.filter(
+    (event) =>
+      event.id !== eventToRemove.id &&
+      event.bookingDate !== eventToRemove.bookingDate
+  );
+  localStorage.setItem('bookedEvents', JSON.stringify(updateBookingEvents));
+  return true;
+};
 
-export { getStoredBookedEvents, saveBookedEvents };
+export { getStoredBookedEvents, saveBookedEvents, removeBookedEvents };

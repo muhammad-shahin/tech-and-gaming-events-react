@@ -42,7 +42,7 @@ const ServiceDetails = () => {
           confirmButtonText: 'OK',
         });
 
-    setShowDatePicker(!showDatePicker);
+    setShowDatePicker(false);
   };
 
   return (
