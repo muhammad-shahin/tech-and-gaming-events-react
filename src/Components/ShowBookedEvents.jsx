@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { SlCalender } from 'react-icons/sl';
 import { RxCross2 } from 'react-icons/rx';
@@ -11,8 +10,15 @@ const ShowBookedEvents = ({
   const { id, event_cover_image, service_name, booking_price, booking_date } =
     bookedEvent;
   return (
-    <div>
+    <div
+      data-aos='fade-up'
+      data-aos-easing='linear'
+      data-aos-duration='300'
+    >
       <div
+        data-aos='flip-right'
+        data-aos-easing='linear'
+        data-aos-duration='600'
         className={` lg:w-fit rounded-lg flex flex-col justify-start bg-[#77befd75]`}
       >
         <div className='lg:w-full  overflow-hidden rounded-t-lg relative'>
@@ -22,7 +28,12 @@ const ShowBookedEvents = ({
             alt='Cover Image'
           />
           <div className='overlay absolute top-0 left-0 w-full h-full p-10 opacity-[0.8]'></div>
-          <div className='absolute top-0 left-0 flex justify-center items-center w-full h-full flex-col gap-5 px-[5%]'>
+          <div
+            data-aos='fade-down'
+            data-aos-easing='linear'
+            data-aos-duration='800'
+            className='absolute top-0 left-0 flex justify-center items-center w-full h-full flex-col gap-5 px-[5%]'
+          >
             <h1 className='md:text-[32px] text-[14px] font-bold text-center  max-w-xl'>
               You Have a Booking For{' '}
               <span className='text-primaryColor'>{service_name} </span>

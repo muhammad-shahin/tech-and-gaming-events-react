@@ -15,7 +15,6 @@ import { useLoaderData } from 'react-router-dom';
 import RecentEvents from '../Components/RecentEvents';
 import Testimonial from '../Components/Testimonial';
 import Footer from '../Layouts/Footer';
-import Pricing from './Pricing';
 const Home = () => {
   const servicesData = useLoaderData();
   const companiesWeWorkedWith = [
@@ -31,11 +30,19 @@ const Home = () => {
       <Slider />
       <div className=' my-20'>
         <div>
-          <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
+          <h2
+            data-aos='zoom-in'
+            data-aos-easing='linear'
+            data-aos-duration='500'
+            className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'
+          >
             Companies We Worked With
           </h2>
         </div>
-        <div className='flex flex-wrap justify-center items-center gap-4'>
+        <div
+          data-aos='fade-down'
+          className='flex flex-wrap justify-center items-center gap-4'
+        >
           {companiesWeWorkedWith.map((company, index) => (
             <WorkedWithLogos
               key={index}
@@ -50,10 +57,20 @@ const Home = () => {
         id='services'
         className='container mx-auto px-[5%] my-20'
       >
-        <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
+        <h2
+          data-aos='zoom-in'
+          data-aos-easing='linear'
+          data-aos-duration='500'
+          className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'
+        >
           Our Services
         </h2>
-        <div className='flex justify-center items-center flex-wrap gap-6'>
+        <div
+          data-aos='zoom-in-up'
+          data-aos-easing='linear'
+          data-aos-duration='700'
+          className='flex justify-center items-center flex-wrap gap-6'
+        >
           {servicesData.map((service) => (
             <Service
               key={service.id}
@@ -65,7 +82,12 @@ const Home = () => {
 
       {/* recent events */}
       <div className='my-20 container mx-auto px-[5%]'>
-        <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
+        <h2
+          data-aos='zoom-in'
+          data-aos-easing='linear'
+          data-aos-duration='500'
+          className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'
+        >
           Recent Events
         </h2>
         <div>
@@ -78,7 +100,12 @@ const Home = () => {
         id='testimonials'
         className='container mx-auto px-[5%] my-32'
       >
-        <h2 className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'>
+        <h2
+          data-aos='zoom-in'
+          data-aos-easing='linear'
+          data-aos-duration='500'
+          className='font-roboto text-center text-[22px] md:text-[38px] lg:text-[48px] font-semibold uppercase mb-10'
+        >
           What Client Say About Us
         </h2>
         <div>

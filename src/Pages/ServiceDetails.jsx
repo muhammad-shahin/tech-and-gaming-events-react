@@ -47,14 +47,24 @@ const ServiceDetails = () => {
 
   return (
     <section className='mb-16 mt-6 container mx-auto space-y-5 lg:w-fit w-[90%] lg:px-[10%]'>
-      <div className='relative mx-auto lg:mx-0'>
+      <div
+        data-aos='fade-up'
+        data-aos-easing='linear'
+        data-aos-duration='500'
+        className='relative mx-auto lg:mx-0'
+      >
         <img
           className='mx-auto w-full max-h-[500px] object-cover rounded-lg'
           src={event_cover_image}
           alt='Cover Image'
         />
         <div className='overlay absolute top-0 left-0 w-full h-full p-10 rounded-lg '></div>
-        <div className='absolute top-0 left-0 flex justify-center items-center w-full h-full flex-col gap-5 px-[5%]'>
+        <div
+          data-aos='fade-down'
+          data-aos-easing='linear'
+          data-aos-duration='700'
+          className='absolute top-0 left-0 flex justify-center items-center w-full h-full flex-col gap-5 px-[5%]'
+        >
           <h1 className='md:text-[32px] text-[14px] font-bold text-center  max-w-xl'>
             Looking For Best Event Management Company For Your Next{' '}
             <span className='text-primaryColor'>{service_name}?</span>
@@ -65,9 +75,14 @@ const ServiceDetails = () => {
         </div>
         <p></p>
       </div>
-      <div className='space-y-4'>
+      <div
+        data-aos='fade-in'
+        data-aos-easing='linear'
+        data-aos-duration='600'
+        className='space-y-4'
+      >
         <div className='flex justify-start items-center gap-3'>
-          <p className='font-medium font-squadaOne text-[20px] md:text-[24px] ml-4'>
+          <p className='font-medium font-squadaOne text-[24px] md:text-[32px] ml-4'>
             {booking_price}
           </p>
           <button

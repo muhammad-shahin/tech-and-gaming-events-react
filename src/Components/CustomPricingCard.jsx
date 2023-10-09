@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 
 const CustomPricingCard = ({ title, points, price }) => {
   return (
-    <div>
+    <div
+      data-aos='flip-right'
+      data-aos-easing='linear'
+      data-aos-duration='700'
+    >
       <Card className='bg-secondaryColor max-w-[400px] h-[900px] px-10 pt-10 hover:scale-y-[-50px]'>
         <h5 className='mb-4 text-[38px] font-roboto font-bold text-[#041f70]'>
           {title}

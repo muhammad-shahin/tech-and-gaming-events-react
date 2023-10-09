@@ -20,7 +20,12 @@ const Slider = () => {
       .then((data) => setSliderContent(data));
   }, []);
   return (
-    <div className='bg-white w-full'>
+    <div
+      className='bg-white w-full'
+      data-aos='fade-down'
+      data-aos-easing='linear'
+      data-aos-duration='500'
+    >
       <Swiper
         className='mySwiper'
         slidesPerView={1}

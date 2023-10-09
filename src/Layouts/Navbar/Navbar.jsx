@@ -21,7 +21,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className=''>
+    <header
+      id='top'
+      data-aos='zoom-in'
+      data-aos-easing='linear'
+      data-aos-duration='300'
+    >
       <nav className='pb-3 pt-6 container mx-auto flex justify-between items-center px-[5%] lg:w-auto relative'>
         {/* log */}
         <div>

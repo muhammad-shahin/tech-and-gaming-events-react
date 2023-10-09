@@ -1,9 +1,8 @@
 import { BsChatRightQuote } from 'react-icons/bs';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Mousewheel, Autoplay } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import 'swiper/css/mousewheel';
 import 'swiper/css/autoplay';
 import { useEffect, useState } from 'react';
 
@@ -15,7 +14,12 @@ const Testimonial = () => {
       .then((data) => setTestimonials(data));
   }, []);
   return (
-    <div className='text-center'>
+    <div
+      data-aos='flip-right'
+      data-aos-easing='linear'
+      data-aos-duration='500'
+      className='text-center'
+    >
       <Swiper
         className='mySwiper'
         slidesPerView={1}
@@ -24,9 +28,8 @@ const Testimonial = () => {
         pagination={{
           clickable: true,
         }}
-        mousewheel={true}
         autoplay={true}
-        modules={[Pagination, Navigation, Mousewheel, Autoplay]}
+        modules={[Pagination, Navigation, Autoplay]}
       >
         <SwiperSlide>
           <div className='py-6 px-14 border-2 border-primaryColor rounded-lg w-fit mx-auto bg-secondaryColor'>

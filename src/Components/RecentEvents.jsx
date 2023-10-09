@@ -1,6 +1,11 @@
 const RecentEvents = () => {
   return (
-    <div className='bg-secondaryColor rounded-lg md:w-[600px] mx-auto md:h-[350px] h-[250px] relative pl-12 pr-8 py-5 flex justify-between items-start'>
+    <div
+      data-aos='flip-up'
+      data-aos-easing='linear'
+      data-aos-duration='900'
+      className='bg-secondaryColor rounded-lg md:w-[600px] mx-auto md:h-[350px] h-[250px] relative pl-12 pr-8 py-5 flex justify-between items-start'
+    >
       <div className='rotate-[-90deg] absolute md:top-[159px] top-[112px] left-[-115px] md:left-[-160px]'>
         <p className='uppercase text-[12px] text-center md:text-[16px] font-roboto font-medium border-2 border-[#4b4848] rounded-t-lg px-3 py-1 md:w-[350px] w-[250px] text-white bg-bgColor'>
           5 Morris RD. Long Beach, NY 11561

@@ -15,6 +15,9 @@ const Service = ({ service }) => {
   };
   return (
     <div
+      data-aos='flip-right'
+      data-aos-easing='linear'
+      data-aos-duration='900'
       className='bg-primaryColor rounded-lg w-[90%] md:w-[300px] lg:w-[350px] md:h-[600px] text-center text-bgColor grid grid-rows-[1fr,auto] shadow-gray-100 shadow-sm'
     >
       <div>
