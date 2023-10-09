@@ -2,6 +2,7 @@ import Root from '../Layouts/Root';
 import BookedEvents from '../Pages/BookedEvents';
 import Home from '../Pages/Home';
 import Login from '../Pages/Login';
+import PricingCard from '../Pages/Pricing';
 import ServiceDetails from '../Pages/ServiceDetails';
 import SignUp from '../Pages/SignUp';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
@@ -39,6 +40,15 @@ const routes = [
         element: (
           <PrivateRoute>
             <BookedEvents />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: '/pricing',
+        loader: () => fetch('/services.json'),
+        element: (
+          <PrivateRoute>
+            <PricingCard />
           </PrivateRoute>
         ),
       },

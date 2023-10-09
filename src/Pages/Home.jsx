@@ -15,6 +15,7 @@ import { useLoaderData } from 'react-router-dom';
 import RecentEvents from '../Components/RecentEvents';
 import Testimonial from '../Components/Testimonial';
 import Footer from '../Layouts/Footer';
+import Pricing from './Pricing';
 const Home = () => {
   const servicesData = useLoaderData();
   const companiesWeWorkedWith = [

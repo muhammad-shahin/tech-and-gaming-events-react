@@ -66,7 +66,7 @@ const Navbar = () => {
               setOpen(false);
             }}
           >
-            <a href='/#testimonials'>Testimonials</a>
+            <a href='/pricing'>Pricing</a>
           </li>
           <div>
             {user ? (

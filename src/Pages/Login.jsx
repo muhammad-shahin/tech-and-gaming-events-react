@@ -6,6 +6,7 @@ import firebaseAuthError from '../Services/Utility/FirebaseAuthError';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Services/AuthProvider/AuthProvider';
 import passwordErrorChecker from '../Services/Utility/PasswordErrorChecker';
+import Modal from '../Services/Utility/Modal';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -133,6 +134,11 @@ const Login = () => {
         {/* sign in with google section */}
         <GoogleSignIn />
       </div>
+      <Modal
+        title='Creating Account'
+        message={modalMessage}
+        modalStatus={showModal}
+      />
     </div>
   );
 };
