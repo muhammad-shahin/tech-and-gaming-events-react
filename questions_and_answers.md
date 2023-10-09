@@ -43,9 +43,9 @@ sum(1, '2');
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: D
+#### Answer: C
 
-<i>Explanation: JavaScript performs type coercion when using the + operator, so it tries to convert the string "2" to a number and adds it to 1, resulting in 3. Therefore, the correct answer is 3.</i>
+<i>Explanation: The code will output the string '12' because JavaScript converts the number to a string and performs string concatenation when we use the + operator with a string and a number.</i>
 
 </p>
 </details>
