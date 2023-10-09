@@ -14,7 +14,8 @@ import Swal from 'sweetalert2';
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState('');
+  const [loading, setLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
 
   // email & password sign up
@@ -75,6 +76,8 @@ const AuthProvider = ({ children }) => {
     logoutUser,
     showProfile,
     setShowProfile,
+    loading,
+    setLoading,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

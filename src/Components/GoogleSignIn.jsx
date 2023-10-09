@@ -14,6 +14,7 @@ const GoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
         const user = result.user;
+        console.log(user);
         Swal.fire({
           position: 'center',
           icon: 'success',

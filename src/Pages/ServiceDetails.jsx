@@ -1,5 +1,10 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import { SlCalender } from 'react-icons/sl';
+import DatePickerModal from '../Components/DatePickerModal';
+import { useState } from 'react';
+import { format } from 'date-fns';
+import { saveBookedEvents } from '../Services/Utility/localstorage';
+import Swal from 'sweetalert2';
 
 const ServiceDetails = () => {
   const servicesData = useLoaderData();
@@ -14,7 +19,32 @@ const ServiceDetails = () => {
     booking_price,
     event_description,
   } = serviceDetails[0];
-  console.log();
+  const [showDatePicker, setShowDatePicker] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(
+    format(new Date(), 'dd/MM/yyyy')
+  );
+
+  // handle event booking Submit
+  const handleEventBooking = () => {
+    const bookedEvents = { id: serviceId, bookingDate: selectedDate };
+    const saveEvent = saveBookedEvents(bookedEvents);
+    saveEvent
+      ? Swal.fire({
+          title: 'Booking Complete',
+          text: 'We Received Your Booking Request. Our Sales Person Will Contact With You Very Soon for Further Details About Your Events & Confirmation. Thank You ❤️',
+          icon: 'success',
+          confirmButtonText: 'OK',
+        })
+      : Swal.fire({
+          title: 'Booking Failed',
+          text: 'This Date is Already Booked. Please Try Booking for Other Dates.',
+          icon: 'error',
+          confirmButtonText: 'OK',
+        });
+
+    setShowDatePicker(!showDatePicker);
+  };
+
   return (
     <section className='mb-16 mt-6 container mx-auto space-y-5 lg:w-fit w-[90%] lg:px-[10%]'>
       <div className='relative mx-auto lg:mx-0'>
@@ -42,6 +72,9 @@ const ServiceDetails = () => {
           </p>
           <button
             className={`font-roboto text-white text-[18px] md:text-[18px] md:px-6 px-3 md:py-2 py-1 rounded-full bg-secondaryColor flex justify-center items-center gap-2 border-2 border-transparent hover:scale-[0.95] hover:text-white hover:border-primaryColor duration-500 custom`}
+            onClick={() => {
+              setShowDatePicker(true);
+            }}
           >
             <SlCalender />
             Book Now
@@ -54,6 +87,13 @@ const ServiceDetails = () => {
           {event_details}
         </p>
       </div>
+      <DatePickerModal
+        title={'Chose Your Event Date'}
+        modalStatus={showDatePicker}
+        handleEventBooking={handleEventBooking}
+        selectedDate={selectedDate}
+        setSelectedDate={setSelectedDate}
+      />
     </section>
   );
 };

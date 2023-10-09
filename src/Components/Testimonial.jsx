@@ -14,7 +14,6 @@ const Testimonial = () => {
       .then((res) => res.json())
       .then((data) => setTestimonials(data));
   }, []);
-  console.log(testimonials);
   return (
     <div className='text-center'>
       <Swiper

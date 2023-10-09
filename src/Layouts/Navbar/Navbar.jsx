@@ -1,4 +1,4 @@
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useContext, useState } from 'react';
 import './Navbar.css';
@@ -50,7 +50,7 @@ const Navbar = () => {
               setOpen(false);
             }}
           >
-            <a href='#services'>Services</a>
+            <a href='/#services'>Services</a>
           </li>
           <li
             className=' uppercase text-[18px] hover:scale-[1.1] duration-500'
@@ -58,7 +58,7 @@ const Navbar = () => {
               setOpen(false);
             }}
           >
-            <NavLink to='/events'>Events</NavLink>
+            <NavLink to='/booked-events'>Booked Events</NavLink>
           </li>
           <li
             className=' uppercase text-[18px] hover:scale-[1.1] duration-500'
@@ -66,7 +66,7 @@ const Navbar = () => {
               setOpen(false);
             }}
           >
-            <a href='#testimonials'>Testimonials</a>
+            <a href='/#testimonials'>Testimonials</a>
           </li>
           <div>
             {user ? (

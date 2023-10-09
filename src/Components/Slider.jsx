@@ -45,7 +45,7 @@ const Slider = () => {
             <div className='overlay absolute top-0 left-0 w-full h-full p-10'></div>
             {/* content */}
             <div className='absolute top-0 left-0 font-squadaOne flex flex-col justify-center items-center w-full h-full text-center gap-4'>
-              <h1 className='text-white md:text-5xl text-lg'>
+              <h1 className='text-white md:text-[64px] md:leading-[64px] text-lg'>
                 Welcome to
                 <span className='text-primaryColor font-bold'>
                   {' '}
@@ -54,7 +54,7 @@ const Slider = () => {
                 <br />
                 Your Gateway to Exceptional Event Management!
               </h1>
-              <p className='max-w-2xl md:px-0 px-[5%] font-roboto text-[12px]'>
+              <p className='max-w-2xl md:max-w-3xl md:px-0 px-[5%] font-roboto text-[12px] md:text-[18px]'>
                 Are you ready to take your tech and gaming gatherings to the
                 next level? Look no further. At
                 <span className='text-primaryColor font-bold'>

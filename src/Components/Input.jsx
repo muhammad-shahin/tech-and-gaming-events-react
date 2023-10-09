@@ -15,6 +15,7 @@ const Input = ({
   setShowPassword,
   passwordError,
   name,
+  isRequired,
 }) => {
   return (
     <div className='relative'>
@@ -34,6 +35,7 @@ const Input = ({
         onChange={handleOnChange}
         value={value}
         name={name}
+        {...(isRequired ? { required: 'required' } : {})}
       />
       {type === 'password' &&
         (showPassword ? (
@@ -70,6 +72,7 @@ Input.propTypes = {
   setShowPassword: PropTypes.func,
   passwordError: PropTypes.string,
   name: PropTypes.string,
+  isRequired: PropTypes.bool,
 };
 
 export default Input;

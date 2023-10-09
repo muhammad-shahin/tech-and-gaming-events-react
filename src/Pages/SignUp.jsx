@@ -161,11 +161,13 @@ const SignUp = () => {
             type='text'
             name={'name'}
             placeholder='Enter Your Name'
+            isRequired={true}
           />
           <Input
             type='email'
             name={'email'}
             placeholder='Enter Your Email'
+            isRequired={true}
           />
           <Input
             type='password'
@@ -175,13 +177,19 @@ const SignUp = () => {
             setShowPassword={setShowPassword}
             handleOnChange={handlePasswordChange}
             passwordError={passwordError}
+            isRequired={true}
           />
-          <div className='font-medium bg-transparent hover:bg-[#b3b2b2] duration-700 flex flex-col justify-center items-center bg-[#f1f1f1]  h-[45px] text-secondaryColor text-center text-[16px] rounded-full px-5'>
+          <div className='font-medium bg-transparent duration-700 flex flex-col justify-center items-center  h-[45px] text-secondaryColor text-center text-[16px] rounded-full '>
             <label
-              className='cursor-pointer hover:bg-[#b3b2b2] bg-[#F3F3F3] w-full '
+              className='cursor-pointer hover:bg-[#b3b2b2] bg-white w-full h-full rounded-full'
               htmlFor='profileImg'
             >
               Upload Profile Picture
+              {imageName && (
+                <p className=' text-[#05c422] text-[14px] text-center'>
+                  {imageName}
+                </p>
+              )}
             </label>
             <input
               className='hidden'
@@ -191,11 +199,6 @@ const SignUp = () => {
               accept='.png, .jpg, .jpeg, .gif, .webp'
               onChange={handleImageInput}
             />
-            {imageName && (
-              <p className=' text-[#05c422] text-[14px] text-center'>
-                {imageName}
-              </p>
-            )}
           </div>
           <Input
             type='submit'

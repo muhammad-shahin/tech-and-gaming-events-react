@@ -1,4 +1,3 @@
-import Button from './Button';
 import { SlCalender } from 'react-icons/sl';
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
@@ -33,7 +32,6 @@ const Service = ({ service }) => {
             {event_description}
           </p>
         </div>
-        <div className='absolute bottom-0 left-0 bg-black bg-opacity-[0.6] w-full lg:h-[15%] h-[30%] rounded-b-lg flex justify-start items-center'></div>
       </div>
       <div className='row-span-2 pb-4 mx-auto'>
         <p className='font-medium font-squadaOne text-[28px] md:text-[36px] my-3'>

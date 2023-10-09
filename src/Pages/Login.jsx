@@ -93,6 +93,7 @@ const Login = () => {
             type='email'
             placeholder='Enter Your Email'
             name={'email'}
+            isRequired={true}
           />
           <Input
             type='password'
@@ -101,6 +102,7 @@ const Login = () => {
             name={'password'}
             handleOnChange={handlePasswordChange}
             setShowPassword={setShowPassword}
+            isRequired={true}
           />
           <Input
             type='submit'
