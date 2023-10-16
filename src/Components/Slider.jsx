@@ -39,7 +39,7 @@ const Slider = () => {
         modules={[Pagination, Navigation, Autoplay]}
       >
         <SwiperSlide>
-          <div className='md:h-[70vh] h-[60vh] relative'>
+          <div className='md:h-[90vh] h-[60vh] relative'>
             <img
               className='object-center object-cover h-full w-full'
               src={
@@ -81,7 +81,7 @@ const Slider = () => {
 
         {sliderContent.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className='md:h-[70vh] h-[60vh] relative'>
+            <div className='md:h-[90vh] h-[60vh] relative'>
               <img
                 className='object-top object-cover h-full w-full'
                 src={slide.event_image}

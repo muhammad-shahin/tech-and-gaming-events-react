@@ -40,17 +40,17 @@ const Input = ({
       {type === 'password' &&
         (showPassword ? (
           <AiFillEyeInvisible
-            className='absolute top-[25%] right-[5%] text-[24px] cursor-pointer text-bgColor'
+            className='absolute top-[13px] right-[5%] text-[24px] cursor-pointer text-bgColor'
             onClick={() => setShowPassword(!showPassword)}
           />
         ) : (
           <AiFillEye
-            className='absolute top-[25%] right-[5%] text-[24px] cursor-pointer text-bgColor'
+            className='absolute top-[13px] right-[5%] text-[24px] cursor-pointer text-bgColor'
             onClick={() => setShowPassword(!showPassword)}
           />
         ))}
       {passwordError && (
-        <p className='text-[#000000] text-[16px] text-center mt-1 '>
+        <p className='text-[#000000] text-[16px] text-center mt-1 max-w-[300px]'>
           {passwordError}
         </p>
       )}
