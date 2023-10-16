@@ -1,7 +1,7 @@
 # HEXA EVENTS - Tech & Gaming Events Management 🎮🎉
 
-[HEXA EVENTS - Screenshot](https://i.ibb.co/xXdzbJp/assignment-9-project-showcase.png)
-[HEXA EVENTS - Screenshot](https://i.ibb.co/xmbDNMX/assignment-9-project-showcase-2.png)
+![HEXA EVENTS Screenshot 1](https://i.ibb.co/xXdzbJp/assignment-9-project-showcase.png)
+![HEXA EVENTS Screenshot 2](https://i.ibb.co/xmbDNMX/assignment-9-project-showcase-2.png)
 
 Welcome to HEXA EVENTS, your one-stop solution for tech and gaming event management!
 
